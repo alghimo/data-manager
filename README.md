@@ -1,29 +1,17 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+## Setup
 
-### What is this repository for? ###
+Install the package (you can use a virtual environment you created, or create a new one). The package was developed with Python 3.8, but should work with Python >= 3.6
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+To install with pip, simply run this from the project root:
 
-### How do I get set up? ###
+```bash
+pip install ./
+```
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+If you intend to do changes in the package, you can install in editable mode:
 
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+```bash
+pip install -e ./
+```
