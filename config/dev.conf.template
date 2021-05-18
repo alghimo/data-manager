@@ -1,0 +1,12 @@
+project_path: data/test_project
+local_path: ${project_path}/local
+hdfs_path: ${project_path}/hdfs
+
+data {
+    local {
+        raw_transactions: { path: ${local_path}/transactions/raw_transactions.csv, type: csv, options: {sep: ","} }
+    }
+    hdfs {
+        transactions:  { path: ${hdfs_path}/transactions/transactions.parquet }
+    }
+}
