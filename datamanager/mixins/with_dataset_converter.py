@@ -5,7 +5,7 @@ from ..interfaces.abstract_dataset_converter import AbstractDatasetConverter
 
 
 class WithDatasetConverter:
-    def __init__(self, dataset_converter: Optional[AbstractDatasetConverter], **kwargs):
+    def __init__(self, dataset_converter: Optional[AbstractDatasetConverter] = None, **kwargs):
         super().__init__(**kwargs)
         self._dataset_converter = dataset_converter or DatasetConverter()
 

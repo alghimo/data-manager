@@ -14,7 +14,6 @@ class SparkStorageManager(WithDatasetConverter, AbstractStorageManager[DataFrame
     will only work when mixed together with a resource manager.
     """
     def __init__(self, spark: Optional[SparkSession] = None, **kwargs):
-        print(f"{self.__class__.__name__} - init")
         super().__init__(**kwargs)
         self._spark = spark or SparkSession.builder.getOrCreate()
         

@@ -24,7 +24,7 @@ class DataManagerFactory:
         data_manager_order = []
 
         if config is not None:
-            pd_configured_dm = PandasConfiguredDataManager(config)
+            pd_configured_dm = PandasConfiguredDataManager(config=config)
             data_managers[pd_configured_dm.id] = pd_configured_dm
             data_manager_order.append(pd_configured_dm.id)
 

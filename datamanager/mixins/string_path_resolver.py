@@ -8,7 +8,6 @@ class StringPathResolver(AbstractResourceResolver[str]):
     _DEFAULT_FILE_TYPE: str = "parquet"
     
     def __init__(self, default_file_type: Optional[str] = None, **kwargs):
-        print(f"{self.__class__.__name__} - init")
         super().__init__(**kwargs)
         self._default_file_type = default_file_type or self._DEFAULT_FILE_TYPE
     

@@ -8,7 +8,6 @@ from ..types import DataContext
 
 class ConfiguredResourceManager(AbstractResourceManager[ConfigTree]):
     def __init__(self, config: ConfigTree, **kwargs):
-        print(f"{self.__class__.__name__} - init")
         super().__init__(**kwargs)
         self._config = config.get(self._config_root) if self._config_root is not None else config
 

@@ -1,3 +1,3 @@
-from .utils import DataConverters
+from .utils import DatasetConverter
 from .data_managers import CompositeDataManager, DataManagerFactory
 
